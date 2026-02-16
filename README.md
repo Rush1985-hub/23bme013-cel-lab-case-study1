@@ -13,9 +13,7 @@ are simultaneously satisfied.
 
 The study demonstrates how computational techniques can be used to analyze and solve nonlinear economic models.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Objective
 
@@ -28,9 +26,7 @@ The primary objectives of this project are:
 • To compute the equilibrium price numerically
 • To visualize demand and supply curves using MATLAB
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Problem Description
 
@@ -41,9 +37,7 @@ A simplified market system is considered where:
 
 The goal is to determine the steady-state price at which the quantity demanded equals the quantity supplied.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Mathematical Formulation
 
@@ -57,9 +51,7 @@ Where:
 • Linear term → Decrease of demand with price
 • Quadratic term → Nonlinear demand behavior
 
-⸻
-
-⸻
+-----------------------------
 
 Nonlinear Supply Function
 
@@ -71,9 +63,7 @@ Where:
 • Linear term → Increase of supply with price
 • Quadratic term → Increasing marginal cost
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Equilibrium Condition
 
@@ -91,9 +81,7 @@ Rearranging:
 
 This nonlinear equation governs the equilibrium price.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Numerical Solution Approach
 
@@ -109,9 +97,7 @@ p_{new} = p - (0.2p^2 + 7p - 80)\Delta t
 
 Iterations continue until convergence is achieved.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Methodology
 
@@ -124,9 +110,7 @@ The equilibrium price is determined using the following computational procedure:
 	6.	Plot nonlinear demand and supply curves
 	7.	Identify equilibrium from curve intersection
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ MATLAB Implementation
 
@@ -138,9 +122,7 @@ The MATLAB script performs:
 • Graphical plotting of demand and supply curves
 • Visualization of equilibrium behavior
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Results
 
@@ -150,9 +132,7 @@ The computational analysis yields:
 
 This value represents the price at which nonlinear demand equals nonlinear supply.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Graphical Interpretation
 
@@ -160,9 +140,7 @@ This value represents the price at which nonlinear demand equals nonlinear suppl
 • Supply Curve → Upward sloping nonlinear curve
 • Intersection → Market Equilibrium
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Key Concepts Demonstrated
 
@@ -174,9 +152,7 @@ This project illustrates the application of:
 • MATLAB computational tools
 • Iterative convergence behavior
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Analytical Significance
 
@@ -189,9 +165,7 @@ Market equilibrium determination is important in:
 
 This project highlights the effectiveness of numerical methods in solving nonlinear equations.
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ How to Run the Project
 	1.	Open MATLAB
@@ -204,9 +178,7 @@ Observe:
 • Demand and supply curves
 • Equilibrium behavior
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Author
 
@@ -214,12 +186,10 @@ Rusheel Amin
 Mechanical Engineering Student
 Computational Engineering Laboratory Project
 
-⸻
-
-⸻
+-----------------------------
 
 ➤ Project Summary
 
 This project successfully demonstrates how the equilibrium price of a nonlinear economic system can be determined using numerical computation and MATLAB visualization techniques, reinforcing the role of computational methods in engineering and analytical problem solving.
 
-⸻
+-----------------------------
