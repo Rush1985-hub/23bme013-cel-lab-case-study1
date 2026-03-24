@@ -1,0 +1,53 @@
+clc;
+clear;
+close all;
+
+% PARAMETERS
+a = 100; b = 5; c = 0.1;
+d = 0.5; e = 0.3; f1 = 0.2;
+
+g = 20; h = 2; i = 0.1;
+j = 0.5; k = 0.5;
+
+% EXTERNAL VARIABLES
+I = 10;
+Ps = 8;
+Pc = 6;
+C = 5;
+T = 3;
+
+% f(p) = D - S 
+f = @(p) (a - b*p - c*p.^2 + d*I + e*Ps - f1*Pc) ...
+       - (g + h*p + i*p.^2 - j*C + k*T);
+
+% BISECTION METHOD
+xl = 0;
+xu = 20;     
+err = 0.001;
+
+while abs(xu - xl) > err
+    xr = (xl + xu)/2;
+    
+    if f(xl)*f(xr) < 0
+        xu = xr;
+    else
+        xl = xr;
+    end
+end
+
+fprintf('Equilibrium price = %.4f\n', xr);
+
+% GRAPH
+p = linspace(0, 20, 100);
+
+D = a - b*p - c*p.^2 + d*I + e*Ps - f1*Pc;
+S = g + h*p + i*p.^2 - j*C + k*T;
+
+plot(p, D, 'b'); hold on;
+plot(p, S, 'r');
+
+xlabel('Price');
+ylabel('Quantity');
+legend('Demand','Supply');
+title('Demand-Supply Equilibrium');
+grid on;
